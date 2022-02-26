@@ -1,7 +1,6 @@
 package SongOLayin.DataPersistence;
 
-import SongOLayin.AllBlueprints.Singer;
-import SongOLayin.Service.LyricService;
+import SongOLayin.Entities.Singer;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -53,12 +52,6 @@ public class SingerToDB {
         return allSingers;
     }
 
-    //helping method that creates Singer-type entities
-    private Singer getSinger(ResultSet rs) throws SQLException {
-        return new Singer(rs.getInt("id"), rs.getString("name"));
-    }
-
-    //------------------------------------------------------------------------------------------
     //gets every song's name and author
     public Map<String, String> getSongsNameAndSinger() {
         Map<String, String> singersSongs = new HashMap<>();
@@ -95,5 +88,10 @@ public class SingerToDB {
             e.printStackTrace();
         }
         return authorLyrics;
+    }
+
+    //helping method that creates Singer-type entities
+    private Singer getSinger(ResultSet rs) throws SQLException {
+        return new Singer(rs.getInt("id"), rs.getString("name"));
     }
 }

@@ -15,6 +15,4 @@ public class ProjectXConnection {
         }
         return conn;
     }
-
-
 }

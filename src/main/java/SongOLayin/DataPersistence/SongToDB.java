@@ -1,6 +1,6 @@
 package SongOLayin.DataPersistence;
 
-import SongOLayin.AllBlueprints.Song;
+import SongOLayin.Entities.Song;
 import SongOLayin.Service.SingerService;
 
 import java.sql.Connection;

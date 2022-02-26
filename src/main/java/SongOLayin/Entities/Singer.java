@@ -1,4 +1,4 @@
-package SongOLayin.AllBlueprints;
+package SongOLayin.Entities;
 
 
 // Simple as can be seen

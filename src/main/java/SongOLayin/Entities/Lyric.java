@@ -1,4 +1,4 @@
-package SongOLayin.AllBlueprints;
+package SongOLayin.Entities;
 
 
 // The rhyme, the hashcode and the length of every lyric are calculated independently.

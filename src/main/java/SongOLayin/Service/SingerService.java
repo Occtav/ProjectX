@@ -1,9 +1,9 @@
 package SongOLayin.Service;
 
 import SongOLayin.DataPersistence.SingerToDB;
-import SongOLayin.AllBlueprints.FileInformation;
-import SongOLayin.AllBlueprints.Singer;
-import SongOLayin.AllBlueprints.Song;
+import SongOLayin.Models.FileInformation;
+import SongOLayin.Entities.Singer;
+import SongOLayin.Entities.Song;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,8 +23,8 @@ public class SingerService {
         return instance;
     }
 
-    public void singersToDB() throws IOException {
-        List<FileInformation> fileInformations = FileService.getInstance().allInformations();
+    public void persistSingersToDB() throws IOException {
+        List<FileInformation> fileInformations = FileService.getInstance().getAllInformations();
         List<String> singers = fileInformations.stream()
                 .map(FileInformation::getAuthorName)
                 .collect(Collectors.toList());
@@ -57,6 +57,7 @@ public class SingerService {
                 id = m.getId();
             }
         }
+
         return id;
     }
 }

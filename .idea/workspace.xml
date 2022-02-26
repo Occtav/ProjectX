@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1fcd10b-ae13-45b0-8a6f-fbac20846e95" name="Default Changelist" comment="" />
+    <list default="true" id="c1fcd10b-ae13-45b0-8a6f-fbac20846e95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/AllBlueprints/FileInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Models/FileInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/AllBlueprints/Lyric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Entities/Lyric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/AllBlueprints/MusicGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Models/MusicGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/AllBlueprints/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Entities/Singer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/AllBlueprints/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Entities/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/FileReaderFromTXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/FileReaderFromTXT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/LyricToDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/LyricToDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/ProjectXConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/ProjectXConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/SingerToDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/SingerToDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/SongToDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/DataPersistence/SongToDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/LyricGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/LyricGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/Mingler/CrossedRhyme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Mingler/CrossedRhyme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/Mingler/PairedRhyme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Mingler/PairedRhyme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/LyricService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/LyricService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/RhymeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/RhymeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/SingerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/SingerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/SongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/SongService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/TypeGuesser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SongOLayin/Service/TypeGuesserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +65,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -57,7 +80,7 @@
       <recent name="SongOLayin.Mingler" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Manelizatorul">
+  <component name="RunManager" selected="Application.LyricGenerator">
     <configuration name="CurrencyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FactoryMethodExercise.CurrencyMain" />
       <module name="ProjectX" />
@@ -71,8 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Manelizatorul" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SongOLayin.Manelizatorul" />
+    <configuration name="LyricGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SongOLayin.LyricGenerator" />
       <module name="ProjectX" />
       <extension name="coverage">
         <pattern>
@@ -134,7 +157,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Manelizatorul" />
+        <item itemvalue="Application.LyricGenerator" />
         <item itemvalue="JUnit.LyricServiceTests.verifyLyricLengthLimit" />
         <item itemvalue="JUnit.LyricServiceTests.verifyLyricLength" />
         <item itemvalue="JUnit.LyricServiceTests.verifyRhymeTest" />
@@ -152,6 +175,17 @@
       <updated>1634757445906</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

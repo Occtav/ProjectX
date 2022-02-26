@@ -1,16 +1,15 @@
 package SongOLayin.Service;
 
-import SongOLayin.AllBlueprints.FileInformation;
-import SongOLayin.AllBlueprints.Lyric;
+import SongOLayin.Models.FileInformation;
+import SongOLayin.Entities.Lyric;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class TypeGuesser {
+public class TypeGuesserService {
 
     Set<String> dragosteType = new HashSet<>(Arrays.asList("iubire", "iubesc","iubita", "fericit", "frumoasa", "fericire", "fericita", "dragoste", "indragostit", "dorinta"));
-    Set<String> jaleType = new HashSet<>(Arrays.asList("sufar", "suferinta", "lacrima", "lacrimi", "dor", "plans", "plang", "suparat", "suparare", "cearta", "certam"));
-    Set<String> jmekerieType = new HashSet<>(Arrays.asList("bani", "smecherie", "smecher", "valoare", "valoarea", "valoros","avere", "banii", "banilor", "laud", "lauda", "invidiosi","invidie","invidiosilor"));
+    Set<String> sadType = new HashSet<>(Arrays.asList("sufar", "suferinta", "lacrima", "lacrimi", "dor", "plans", "plang", "suparat", "suparare", "cearta", "certam"));
+    Set<String> gangstaType = new HashSet<>(Arrays.asList("bani", "smecherie", "smecher", "valoare", "valoarea", "valoros","avere", "banii", "banilor", "laud", "lauda", "invidiosi","invidie","invidiosilor"));
 
 
     public Map<String, String> getGuessedType(Map<String, List<Lyric>> l){
@@ -31,23 +30,21 @@ public class TypeGuesser {
     }
 
     public String guessedType(List<Lyric> l){
-        int dragoste = countDragoste(transformLyricsToWords(transformLyricsToString(l)));
-        int jale = countJale(transformLyricsToWords(transformLyricsToString(l)));
-        int smecherie = countSmecherie(transformLyricsToWords(transformLyricsToString(l)));
+        int dragoste = countLove(transformLyricsToWords(transformLyricsToString(l)));
+        int jale = countSad(transformLyricsToWords(transformLyricsToString(l)));
+        int smecherie = countGangsta(transformLyricsToWords(transformLyricsToString(l)));
         if(dragoste > jale && dragoste > smecherie){
-            return "DRAGOSTE";
+            return "LOVE";
         }
         if(jale > dragoste && jale > smecherie){
-            return "JALE";
+            return "SAD";
         }
         if(smecherie > dragoste && smecherie > jale){
-            return "JMEKERIE";
+            return "GANGSTA";
         }
         else{
-            return "neconcludent";
+            return "IRRELEVANT";
         }
-
-
     }
 
     private List<String> transformLyricsToString(List<Lyric> lyrics){
@@ -69,7 +66,7 @@ public class TypeGuesser {
         return words;
     }
 
-    private int countDragoste(List<String> words){
+    private int countLove(List<String> words){
         int love = 0;
         for(String str : words){
             if(dragosteType.contains(str)){
@@ -79,24 +76,23 @@ public class TypeGuesser {
         return love;
     }
 
-    private int countJale(List<String> words){
+    private int countSad(List<String> words){
         int jale = 0;
         for(String str : words){
-            if(jaleType.contains(str)){
+            if(sadType.contains(str)){
                 jale++;
             }
         }
         return jale;
     }
 
-    private int countSmecherie(List<String> words){
-        int smecherie = 0;
+    private int countGangsta(List<String> words){
+        int gangsta = 0;
         for(String str : words){
-            if(jmekerieType.contains(str)){
-                smecherie++;
+            if(gangstaType.contains(str)){
+                gangsta++;
             }
         }
-        return smecherie;
-
+        return gangsta;
     }
 }

@@ -6,9 +6,8 @@ import java.util.HashSet;
 
 public class RhymeService {
 
-
     // get all lyrics with the same rhyme, based on a first rhyme extracted by method getRandomID()
-    public HashSet<String> getLyricsWithR(){
+    public HashSet<String> getLyricsWithRhyme(){
         String randomRhyme = MinglerToDB.getInstance().getRhymeFromRandomNo(getRandomId());
         return MinglerToDB.getInstance().getAllRhymedLyrics(randomRhyme);
     }
@@ -23,5 +22,4 @@ public class RhymeService {
     public int getRandomIndexOfLyric(int max) {
         return (int) (Math.random() * (max - 1 + 1) + 1);
     }
-
 }

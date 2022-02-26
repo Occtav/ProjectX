@@ -1,6 +1,5 @@
 package SongOLayin.Mingler;
 
-import SongOLayin.DataPersistence.MinglerToDB;
 import SongOLayin.Service.RhymeService;
 
 import java.util.ArrayList;
@@ -23,8 +22,8 @@ public class PairedRhyme {
 
         RhymeService rhymeService = new RhymeService();
 
-        HashSet<String> setNo1 = rhymeService.getLyricsWithR();
-        HashSet<String> setNo2 = rhymeService.getLyricsWithR();
+        HashSet<String> setNo1 = rhymeService.getLyricsWithRhyme();
+        HashSet<String> setNo2 = rhymeService.getLyricsWithRhyme();
         List<String> listNo1 = new ArrayList<>(setNo1);
         List<String> listNo2 = new ArrayList<>(setNo2);
 

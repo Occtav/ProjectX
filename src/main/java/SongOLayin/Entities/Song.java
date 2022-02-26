@@ -1,4 +1,6 @@
-package SongOLayin.AllBlueprints;
+package SongOLayin.Entities;
+
+import SongOLayin.Models.MusicGenre;
 
 public class Song {
     private int id;

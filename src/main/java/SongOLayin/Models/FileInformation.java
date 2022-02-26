@@ -1,4 +1,7 @@
-package SongOLayin.AllBlueprints;
+package SongOLayin.Models;
+
+import SongOLayin.Entities.Lyric;
+import SongOLayin.Entities.Song;
 
 import java.util.List;
 
